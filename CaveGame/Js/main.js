@@ -3,7 +3,7 @@ let blinker; // element på siden så endnu ikke tildelt (blinkende firkant)
 const inputField; //input feltet hvor burgeren kan skrive noget 
 let userInput; // brugerens input 
 let option = 0; //placering på kortet
-let route; // brugers vej igennem spillet
+let route = [] // brugers vej igennem spillet
 
 // Functions 
 
@@ -47,3 +47,17 @@ const whatToDo = (userInput) => {  //husk variablen in mellem ()
 }
 
 //Event listeners
+
+
+// While loops (shoppinglist) samt viser det på siden HTML
+// Så hver gang den køre ligger den shoppinglist til. 
+// Så længe i er mindre end min shoppingliste viser den. 
+
+let i = 0;
+let shoppinglist = ["milk", "carrots", "bananas"]
+let myHeading = document.getElementById("test")
+
+while (i < shoppinglist.length){
+    myHeading.innerHTML += "<br>" + shoppinglist[i];
+i++;
+}
