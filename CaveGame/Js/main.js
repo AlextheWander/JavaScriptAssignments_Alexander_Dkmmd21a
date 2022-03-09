@@ -48,16 +48,3 @@ const whatToDo = (userInput) => {  //husk variablen in mellem ()
 
 //Event listeners
 
-
-// While loops (shoppinglist) samt viser det på siden HTML
-// Så hver gang den køre ligger den shoppinglist til. 
-// Så længe i er mindre end min shoppingliste viser den. 
-
-let i = 0;
-let shoppinglist = ["milk", "carrots", "bananas"]
-let myHeading = document.getElementById("test")
-
-while (i < shoppinglist.length){
-    myHeading.innerHTML += "<br>" + shoppinglist[i];
-i++;
-}
